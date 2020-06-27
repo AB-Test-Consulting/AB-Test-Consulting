@@ -1,62 +1,69 @@
 <html>
 <head>
+    <title>AB Test Consulting.</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+          integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171027697-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
       gtag('js', new Date());
 
       gtag('config', 'UA-171027697-1');
     </script>
     <style>
-        body{
+        body {
+            padding: 10px;
+        }
+
+        div {
             padding: 10px;
         }
     </style>
 </head>
 <body>
+<div>
     <h1>AB Test Consulting</h1>
-    <div>
-        Helping your engineering and data science teams test their ideas and build awesome software together
-    </div>
-    <div>
-        We help you collectively refining your AB Testing requirements, reviewing the market for potential vendors and open source solutions.
-    </div>
-    <div>
-        <ul>
-            <li>Launch Darkly</li>
-            <li>Apptimize</li>
-            <li>Optimizely</li>
-            <li>Google Optimize</li>
-            <li>Braze</li>
-            <li>VWO</li>
-            <li>Unleashed</li>
-            <li>... and various open source solutions.</li>
-        </ul>
-    </div>
-    <div>
-        Let's start with a question...
-        <!-- modify this form HTML and place wherever you want your form -->
-
-        <form
-                action="https://formspree.io/xjvaeowq"
-                method="POST"
-        >
-            <label>
-                Your email:
-                <input type="text" name="_replyto">
-            </label>
-            <label>
-                How can we help?
-                <textarea name="message"></textarea>
-            </label>
-
-            <!-- your other form fields go here -->
-
-            <button type="submit">Send</button>
-        </form>
-    </div>
+</div>
+<div>
+    Helping your engineers and data scientists test their ideas and build awesome software together!
+</div>
+<div>
+    We help you collectively refining your AB Testing requirements, reviewing the market for potential vendors and open
+    source solutions.
+</div>
+<div>
+    <ul>
+        <li>Launch Darkly</li>
+        <li>Apptimize</li>
+        <li>Optimizely</li>
+        <li>Google Optimize</li>
+        <li>Braze</li>
+        <li>VWO</li>
+        <li>Unleashed</li>
+        <li>... and various open source solutions.</li>
+    </ul>
+</div>
+<form action="https://formspree.io/xjvaeowq" method="POST" class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="_replyto" placeholder="Email"/>
+        </div>
+        <div class="pure-control-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="How can we help?"></textarea>
+        </div>
+        <div class="pure-controls">
+            <button type="submit" class="pure-button pure-button-primary">Send</button>
+        </div>
+    </fieldset>
+</form>
 </body>
 </html>
